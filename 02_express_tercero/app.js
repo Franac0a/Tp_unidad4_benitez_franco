@@ -11,7 +11,7 @@ app.get("/api/characters", async (req, res) => {
 
   const arrayData = data.items
 
-  res.status(200).json({items:arrayData});
+  return res.status(200).json({items:arrayData});
 });
 
 app.get("/api/characters/:id", async(req, res) => {
